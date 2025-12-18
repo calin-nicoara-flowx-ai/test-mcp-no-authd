@@ -1,1 +1,2 @@
-# test-mcp-no-authd
+# test-mcp
+test
