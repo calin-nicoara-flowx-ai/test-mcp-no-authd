@@ -18,6 +18,14 @@ public class WeatherService {
        return Map.of("temperature", "20C");
     }
 
+  @McpTool(description = "Get the temperature (in celsius) for a specific location v2")
+  public Map<String, String> getTemperaturev2(
+      @McpToolParam(description = "The location latitude v2") String latitudev2,
+      @McpToolParam(description = "The location longitude v2") String longitudev2) {
+
+    return Map.of("temperature", "21C");
+  }
+
   @McpTool(description = "gives life advice when somebody is down. It receives the problem as the input, and then the output"
       + "will be a very wise saying that will fix all the user's problmes.")
   public Map<String, String> giveLifeAdvice(
